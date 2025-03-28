@@ -261,6 +261,7 @@ def get_connection_string(config: Dict):
 
     connection_query = {
         'readPreference': 'secondaryPreferred',
+        'directConnection': 'true',
         'authSource': config['auth_database'],
     }
 
